@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>МосОблСеть</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="logo">Мособл<span class="orange">C</span>еть</div>
+            <div class="header__right-block">
+                <a href="#" class="mos__link">Контакты</a>
+            </div>
+        </div>
+
+        <div class="nav__btn" id="menuOpen"></div>
+
+        <div class="banner">
+            <div class="banner__cnt-block">
+                <p class="banner__cnt">Обслуживаем сети и подстанции</p>
+                <button class="banner__bnt">Заявка на присоединение</button>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Потребителям <i class="fa fa-angle-down arr-down" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Услуги <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Тех. Присоединение <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Раскрытие информации <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Нормативные документы <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Закупки <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Приборы учета <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 class="mos__ttl2">ООО "МосОблСеть"</h2>
+            <p class="mos__cnt mt20">Образовано в 2011 году и является электросетевой компанией, действующей в соответствии  с   нормами  Гражданского  кодекса  Российской Федерации. Решением Правления Энергетического Комитета Московской области от 10 марта 2004 года №5 компания включена в Реестр энергоснабжающих организаций Московской области, в отношении которых осуществляется государственное регулирование, под регистрационным номером: раздел 3-услуги по передаче и распределению электроэнергии-3.172.</p>
+            <p class="mos__cnt">ООО "СК"МосОблЭлектро" зарегистрировано 12 января 2011 года за основным Государственным регистрационным номером 1115029000030.</p>
+            <p class="mos__cnt">Электроснабжение ООО "СК"МосОблЭлектро" осуществляет от 3 питающих центров. Электрические сети ООО "СК"МосОблЭлектро" расположены в Московской области. Для обеспечения передачи электроэнергии предприятие эксплуатирует:</p>
+            <p class="mos__cnt ">24  трансформаторных подстанции;</p>
+            <p class="mos__cnt mt10">кабельные и воздушные линии 6-10-35 кВ общей длиной 23.22 км.</p>
+        </div>
+        
+        <div class="overlay" style="display:none;"></div>
+    </div>
+
+
+    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $('#menuOpen').on('click', function () {
+            $('.nav').addClass('active');
+            $('.overlay').show();
+        });
+
+        $('.overlay').on('click', function () {
+            $('.nav').removeClass('active');
+            $(this).hide();
+        });
+    </script>
+
+</body>
+</html>

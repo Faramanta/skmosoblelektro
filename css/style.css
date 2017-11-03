@@ -1,0 +1,193 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: #000;
+    background-color: #dedede;
+}
+
+.page {
+    position: relative;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1440px;
+    min-height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+}
+
+/*шапка*/
+.header {
+    padding: 19px 15px;
+    border-bottom: 2px solid #f8a53a;
+    background: #21252D;
+}
+
+.logo {
+    font-size: 34px;
+    font-family: 'PT Mono', monospace;
+    color: #fff;
+}
+
+.header__right-block {
+    position: absolute;
+    right: 150px;
+    top: 27px;
+}
+
+.mos__link {
+    font-size: 21px;
+    color: #F2F2F2;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+}
+
+.mos__link:hover {
+    text-decoration: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 78px;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.3);
+}
+
+/*баннер*/
+.banner {
+    display: block;
+    width: 100%;
+    min-height: 484px;
+    background: url("../images/banner-bg.png");
+}
+
+.banner__cnt-block {
+    position: absolute;
+    right: 148px;
+    top: 240px;
+    text-align: right;
+}
+
+.banner__cnt {
+    font-size: 48px;
+    color: #F2F2F2;
+    font-family: 'PT Mono', monospace;
+}
+
+.banner__bnt {
+    display: inline-block;
+    width: 310px;
+    padding: 13px 0;
+    border-radius: 2px;
+    text-align: center;
+    background: #F8A53A;
+    font-size: 21px;
+    font-family: 'PT Mono', monospace;
+    border: none;
+    color: #F2F2F2;
+    margin-top: 25px;
+}
+
+/*меню*/
+.nav__btn {
+    position: absolute;
+    top: 98px;
+    left: 15px;
+    width: 42px;
+    height: 45px;
+    background: url("../images/menu.png");
+    cursor: pointer;
+}
+
+.nav {
+    left: -401px;
+    position: absolute;
+    top: 78px;
+    bottom: 0px;
+    background: #21252D;
+    min-width: 400px;
+    z-index: 1;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.nav.active {
+    left: 0;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__link {
+    display: inline-block;
+    position: relative;
+    padding: 13px 30px;
+    font-size: 21px;
+    font-family: 'PT Sans', sans-serif;
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+
+.arr-down {
+    font-size: 18px;
+}
+
+.content {
+    padding: 75px 320px ;
+}
+
+.mos__ttl2 {
+    font-size: 24px;
+    color: #000;
+    font-family: 'PT Sans bold', sans-serif;
+    text-align: center;
+    line-height: 31px;
+}
+
+.mos__cnt {
+    font-size: 21px;
+    color: #21252D;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 35px;
+    text-indent: 15px;
+}
+
+.mos__cnt + .mos__cnt {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+.orange {
+    color: #f8a53a;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
