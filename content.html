@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>МосОблСеть</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="logo">Мособл<span class="orange">C</span>еть</div>
+            <div class="header__right-block header__right-block-in">
+                <a href="#" class="mos__link">Контакты</a>
+                <button class="banner__bnt banner__bnt--top ml45">Заявка на присоединение</button>
+            </div>
+        </div>
+
+
+        <div class="nav nav-in">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Потребителям <i class="fa fa-angle-down arr-down" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Услуги <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Тех. Присоединение <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Раскрытие информации <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Нормативные документы <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Закупки <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Приборы учета <i class="fa fa-angle-down arr-down" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content__wrap">
+            <div class="content content-in">
+                <h2 class="mos__ttl2">Индивидуальные тарифы на услуги по передаче электрической энергии на территории Московской области </h2>
+                <p class="mos__cnt mt20">Договор не может быть заключен ранее заключения договора об осуществлении технологического присоединения энергопринимающих устройств (энергетических установок) юридических и физических лиц к электрическим сетям.</p>
+                <p class="mos__cnt mt20">Договор должен содержать следующие существенные условия:</p>
+                <p class="mos__cnt mt20">1) Величина максимальной мощности энергопринимающих устройств, технологически присоединённых в установленном законодательством Российской Федерации к электрической сети, с распределением указанной величины по каждой точке присоединения;</p>
+                <p class="mos__cnt mt20">2) Величина заявленной мощности, в пределах которой сетевая организация принимает на себя обязательства обеспечить передачу электрической энергии в указанных в договоре точках присоединения. При этом в случае опосредственного присоединения величина заявленной мощности в точке присоединения каждого из энергопринимающих устройств потребителей услуг определяется в соответствии с величиной потребления электрической энергии соответствующим потребителем в часы пиковых нагрузок энергосистемы, ежегодно определяемых системным оператором;</p>
+                <p class="mos__cnt mt20">3) Ответственность потребителя услуг и сетевой организации за состояние и обслуживание объектов электросетевого хозяйства, которая определяется балансовой принадлежностью сетевой организации и потребителя услуг (потребителя электрической энергии, в интересах которого заключается договор) и фиксируется в акте разграничения балансовой принадлежности электросетей и акте эксплуатационной ответственности сторон, являющихся приложениями к договору;</p>
+                <p class="mos__cnt mt20">4) Обязательства сторон по оборудованию точек присоединения средствами измерения электрической энергии, в том числе измерительными приборами, соответствующими установленным законодательством Российской Федерации требованиям, а также по обеспечению их работоспособности и соблюдению в течение всего срока действия договора эксплуатационных требований к ним, установленных уполномоченным органом по техническому регулированию и метрологии и изготовителем. До исполнения обязательств по оборудованию точек присоединения приборами учёта стороны применяют согласованный ими расчётный способ учёта электрической энергии (мощности), применяемый при определении объёмов переданной электроэнергии (мощности).</p>
+
+            </div>
+        </div>
+
+
+        <div class="overlay" style="display:none;"></div>
+    </div>
+
+
+    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $('#menuOpen').on('click', function () {
+            $('.nav').addClass('active');
+            $('.overlay').show();
+        });
+
+        $('.overlay').on('click', function () {
+            $('.nav').removeClass('active');
+            $(this).hide();
+        });
+    </script>
+
+</body>
+</html>
