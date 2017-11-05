@@ -22,11 +22,10 @@ body {
     max-width: 1440px;
     min-height: 100%;
     background-color: #fff;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
 }
-
-
 
 /*шапка*/
 .header {
@@ -39,6 +38,7 @@ body {
     font-size: 34px;
     font-family: 'PT Mono', monospace;
     color: #fff;
+    text-decoration: none;
 }
 
 .header__right-block {
@@ -67,7 +67,7 @@ body {
 .overlay {
     position: absolute;
     top: 78px;
-    right: 0px;
+    right: 0;
     bottom: 0;
     left: 0;
     background: rgba(51, 51, 51, 0.3);
@@ -137,10 +137,12 @@ body {
     left: -401px;
     position: absolute;
     top: 78px;
-    bottom: 0px;
+    bottom: 0;
     background: #21252D;
     min-width: 400px;
     z-index: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     padding-top: 20px;
 }
@@ -152,10 +154,21 @@ body {
 .nav-in {
     left: 0;
 }
-.nav__list {
+
+.nav__list,
+.nav__sub-list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.nav__sub-list {
+    margin-left: 18px;
+    display: none;
+}
+
+.nav__sub-list.active {
+    display: block;
 }
 
 .nav__item {
@@ -164,6 +177,7 @@ body {
 
 .nav__link {
     display: inline-block;
+    max-width: 278px;
     position: relative;
     padding: 13px 30px;
     font-size: 21px;
@@ -172,6 +186,25 @@ body {
     text-decoration: none;
 }
 
+.nav__link-submenu {
+    display: inline-block;
+    max-width: 278px;
+    position: relative;
+    padding: 13px 30px;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+.nav__link-submenu.active,
+.nav__link.active {
+    color: #F8A53A;
+}
+
+.nav__link--sm {
+    font-size: 13px;
+}
 
 .arr-down {
     font-size: 18px;
@@ -230,7 +263,6 @@ body {
     width: 100%;
     height: 100%;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: none;
     font-size: 18px;
@@ -251,7 +283,6 @@ body {
     width: 100%;
     height: 100%;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: none;
     font-size: 18px;
@@ -280,5 +311,4 @@ body {
 .ml45 {
     margin-left: 45px !important;
 }
-
 
